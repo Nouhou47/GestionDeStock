@@ -26,6 +26,37 @@ namespace GestionDeStock
         }
 
         /**
+            * Cette méthode permet de charger les enregistrements contenus dans
+            * le fichier produits.txt. Un enregistrement représente un produit.  
+        */        
+        static List<Product> loadProductsIntoList(string filePath)
+        {
+            var lineProductsArray = File.ReadAllLines(filePath).ToList();
+            var products = new List<Product>();
+
+            int id;
+            int stock;
+            string name;
+            Etat etat;
+            string[] productDataArray;
+
+            foreach( var line in lineProductsArray)
+            {
+                productDataArray = line.Split(":");
+
+                int.TryParse(productDataArray[0], out id);
+                name = productDataArray[1];
+
+                int.TryParse(productDataArray[2], out stock);
+                etat = etatExact(stock);
+
+                Product p = new Product(id, name, stock, etat);
+                products.Add(p);
+            }
+            return products;
+        }
+
+        /**
             * Cette méthode prend en paramètre un objet Etat et
             * retourne sa valeur en chaine de caractères.
         */
