@@ -26,6 +26,31 @@ namespace GestionDeStock
         }
 
         /**
+            * Cette méthode prend en paramètre un objet Etat et
+            * retourne sa valeur en chaine de caractères.
+        */
+        static string matchEtatToString(Etat etat)
+        {
+            string state;
+
+            switch (etat)
+            {
+                case Etat.DISPONIBLE:
+                    state = "Disponible";
+                break;
+                case Etat.EN_RUPTURE:
+                    state = "Rupture";
+                break;
+                case Etat.EN_REAPPROVISIONNEMENT:
+                    state = "Réapprovisionnement";
+                break;
+                default: state = "Rupture";
+                break;
+            }
+            return state;
+        }
+
+        /**
             * n fonction du stock d'un produit, 
             * son état exact est retourné.
         */
