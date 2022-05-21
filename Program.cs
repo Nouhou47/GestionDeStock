@@ -14,7 +14,9 @@ namespace GestionDeStock
         private const int taillePermiseStock = 10;
         private const int taillePermiseEtat = 24;
         static void Main(String[] args)
-        {}
+        {
+            
+        }
 
          /**
             * Cette méthode est nécessaire lors de 
@@ -95,6 +97,43 @@ namespace GestionDeStock
                 break;
             }
             return state;
+        }
+
+        /**
+            * Cette méthode réalise l'affichage 
+            * des produits dans le tableau. 
+        */
+        static void affichage(List<Product> produits)
+        {
+            Console.WriteLine("\n");
+            Console.WriteLine("+---+--------------------------------------------+------------+-------------------------+");
+            Console.WriteLine("| # | Produit(s)                                 |  Stock(s)  |           Etat          |");
+            Console.WriteLine("+---+--------------------------------------------+------------+-------------------------+");
+
+            foreach (var item in produits)
+            {
+                string id = "";
+                if(item.Id<10) {
+                    id ="| "+item.Id+" | ";
+                }else {
+                    id ="|"+item.Id+" | ";
+                }
+                Console.Write(id);  
+                
+                Console.Write(item.Name);
+                afficherEspaceNFois(taillePermiseNomProduit - item.Name.Length - 1);
+                Console.Write("| ");
+                
+                string qteStr = item.Stock.ToString();
+                Console.Write(qteStr+" ");
+                afficherEspaceNFois(taillePermiseStock - qteStr.Length);
+                Console.Write("| ");
+                string etatStock = matchEtatToString(item.Etat);
+                Console.Write(etatStock);
+                afficherEspaceNFois(taillePermiseEtat - etatStock.Length);
+                Console.Write("|\n");
+            }
+            Console.WriteLine("+---+--------------------------------------------+------------+-------------------------+");
         }
 
         /**
