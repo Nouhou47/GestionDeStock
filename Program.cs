@@ -10,7 +10,19 @@ namespace GestionDeStock
     }
     class Program
     {     
+        private const int taillePermiseNomProduit = 44;
+        private const int taillePermiseStock = 10;
+        private const int taillePermiseEtat = 24;
         static void Main(String[] args)
         {}
-    }
+
+         /**
+            * Cette méthode est nécessaire lors de 
+            * l'affichage des produits dans le tableau.
+        */
+        static void afficherEspaceNFois(int n)
+        {
+            for (int i = 0; i<n; i++) Console.Write(" ");
+        }
+    }   
 }
