@@ -24,5 +24,20 @@ namespace GestionDeStock
         {
             for (int i = 0; i<n; i++) Console.Write(" ");
         }
+
+        /**
+            * n fonction du stock d'un produit, 
+            * son état exact est retourné.
+        */
+        static Etat etatExact(int quantite)
+        {
+            Etat state = Etat.EN_RUPTURE;
+            
+            if (quantite > 5) state = Etat.DISPONIBLE;
+            if (quantite <= 5) state = Etat.EN_REAPPROVISIONNEMENT;
+            if (quantite <= 0) state = Etat.EN_RUPTURE;
+            
+            return state;
+        }
     }   
 }
