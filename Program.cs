@@ -15,7 +15,35 @@ namespace GestionDeStock
         private const int taillePermiseEtat = 24;
         static void Main(String[] args)
         {
-            
+            int n = 1;
+            List<Product> produits = loadProductsIntoList("./produits.txt");
+            do{
+                affichage(produits);
+
+                // On entend que l'utilisatuer entre un id au clavier.
+                //Console.WriteLine("Type something: ");
+                var la = Console.ReadKey();
+                
+                int productIdToUpdateStock;
+                bool temoin = int.TryParse(la.KeyChar.ToString(), out productIdToUpdateStock);
+                if (temoin == true) {
+                    // if n has been convert to int, We will update the stock of product which id equals n.
+                    foreach(var p in produits)
+                    {
+                        if(p.Id == productIdToUpdateStock)
+                        {
+                            p.Stock--;
+                            if (p.Stock <= 0) p.Stock = 0;
+                            p.Etat = etatExact(p.Stock);
+                        }
+                    }
+                    if (productIdToUpdateStock == 0)
+                    {
+                        Environment.Exit(0);
+                    }
+                } 
+                Console.Clear();
+            } while(n != 0);
         }
 
          /**
