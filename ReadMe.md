@@ -2,7 +2,7 @@
 
 ## Description
 
-This applition aims to realize classic operations on Stock Management.
+This application aims to realize classic operations on Stock Management.
 
 ## Installation
 
