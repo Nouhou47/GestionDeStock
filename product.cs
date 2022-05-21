@@ -1,6 +1,6 @@
 using GestionDeStock;
 
-namespace Products
+namespace GestionDeStock
 {
     class Product
     {

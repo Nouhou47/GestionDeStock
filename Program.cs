@@ -26,6 +26,22 @@ namespace GestionDeStock
         }
 
         /**
+            * Cette fonction retourne une liste contenant les ids des produits en cours.
+            * Afin de mettre à jour les stocks des différents produits en juste saisissant
+            * l'id d'un produit.
+        */
+        static List<int> registerAvailableProductIds(List<Product> products)
+        {
+            var ids = new List<int>();
+
+            foreach (var item in products)
+            {
+                ids.Add(item.Id);
+            }
+            return ids;
+        }
+
+        /**
             * Cette méthode permet de charger les enregistrements contenus dans
             * le fichier produits.txt. Un enregistrement représente un produit.  
         */        
