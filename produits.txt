@@ -1,0 +1,6 @@
+1:Tongs:50:disponible
+2:Ballons:8:Rupture
+3:Ordinateurs:4:disponible
+4:Chaussures:5:Reapprovisionnement
+5:Bouteilles:512:Rupture
+6:Téléphone:9:disponible
