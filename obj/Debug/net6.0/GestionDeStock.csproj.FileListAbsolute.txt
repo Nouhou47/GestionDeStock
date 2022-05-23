@@ -1,0 +1,15 @@
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\bin\Debug\net6.0\GestionDeStock.exe
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\bin\Debug\net6.0\GestionDeStock.deps.json
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\bin\Debug\net6.0\GestionDeStock.runtimeconfig.json
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\bin\Debug\net6.0\GestionDeStock.dll
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\bin\Debug\net6.0\GestionDeStock.pdb
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\GestionDeStock.csproj.AssemblyReference.cache
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\GestionDeStock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\GestionDeStock.AssemblyInfoInputs.cache
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\GestionDeStock.AssemblyInfo.cs
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\GestionDeStock.csproj.CoreCompileInputs.cache
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\GestionDeStock.dll
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\refint\GestionDeStock.dll
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\GestionDeStock.pdb
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\GestionDeStock.genruntimeconfig.cache
+C:\Users\NDACH\Documents\C# Workspace\GestionDeStock\obj\Debug\net6.0\ref\GestionDeStock.dll

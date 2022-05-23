@@ -140,6 +140,18 @@ namespace GestionDeStock
 
             foreach (var item in produits)
             {
+                ConsoleColor foreGroundColorToPrintWith = ConsoleColor.Gray;
+
+                if (item.Stock == 0)
+                {
+                    foreGroundColorToPrintWith = ConsoleColor.Red;
+                }
+                
+                if (item.Stock > 0 && item.Stock <= 5)
+                {
+                    foreGroundColorToPrintWith = ConsoleColor.Yellow;
+                }
+                Console.ForegroundColor = foreGroundColorToPrintWith;
                 string id = "";
                 if(item.Id<10) {
                     id ="| "+item.Id+" | ";
@@ -161,6 +173,7 @@ namespace GestionDeStock
                 afficherEspaceNFois(taillePermiseEtat - etatStock.Length);
                 Console.Write("|\n");
             }
+            Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("+---+--------------------------------------------+------------+-------------------------+");
         }
 
