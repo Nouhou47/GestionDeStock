@@ -140,8 +140,8 @@ namespace GestionDeStock
 
             foreach (var item in produits)
             {
-                ConsoleColor foreGroundColorToPrintWith = ConsoleColor.Gray;
-
+                //ConsoleColor foreGroundColorToPrintWith = ConsoleColor.Gray;
+                ConsoleColor foreGroundColorToPrintWith = ConsoleColor.Black;
                 if (item.Stock == 0)
                 {
                     foreGroundColorToPrintWith = ConsoleColor.Red;
@@ -151,7 +151,8 @@ namespace GestionDeStock
                 {
                     foreGroundColorToPrintWith = ConsoleColor.Yellow;
                 }
-                Console.ForegroundColor = foreGroundColorToPrintWith;
+                //Console.ForegroundColor = foreGroundColorToPrintWith;
+                Console.BackgroundColor = foreGroundColorToPrintWith;
                 string id = "";
                 if(item.Id<10) {
                     id ="| "+item.Id+" | ";
@@ -173,7 +174,8 @@ namespace GestionDeStock
                 afficherEspaceNFois(taillePermiseEtat - etatStock.Length);
                 Console.Write("|\n");
             }
-            Console.ForegroundColor = ConsoleColor.Gray;
+            //Console.ForegroundColor = ConsoleColor.Gray;
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine("+---+--------------------------------------------+------------+-------------------------+");
         }
 
