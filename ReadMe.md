@@ -15,7 +15,7 @@ Choose corresponding [.NET 6.0 Framework](https://dotnet.microsoft.com/en-us/dow
 
 ## Output
 
-The image below is the output.
+The image below is the output.\n
 ![img](./output.PNG)
 
 ## Contributing
