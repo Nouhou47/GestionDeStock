@@ -11,7 +11,7 @@ Choose corresponding [.NET 6.0 Framework](https://dotnet.microsoft.com/en-us/dow
 ## How to run project.
 
 * Open your terminal, and navigate to the root path of the project. Type the following command: ```>dotnet run```
-* To terminate the programme type ```>0``` in the terminal.
+* To terminate the program type ```>0``` in the terminal.
 
 ## Output
 
